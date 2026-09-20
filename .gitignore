@@ -1,0 +1,22 @@
+# Python bytecode from the offline test suite.
+__pycache__/
+*.py[cod]
+
+# Build output. A clone runs npm install && npm run build.
+mcp-server/node_modules/
+mcp-server/dist/
+
+# Wi-Fi credentials. They live on the board, never here.
+secrets.py
+
+# MicroPython firmware, 1.8 MB and downloadable from micropython.org.
+*.bin
+
+# Machine-specific: absolute paths and this network's address.
+.mcp.json
+
+# Personal approval of the project MCP server; not shared.
+.claude/settings.local.json
+
+# macOS directory metadata.
+.DS_Store
